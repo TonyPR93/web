@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="titre-intro">
+
+        </div>
+        <nav id="navi">
+            <ul>
+                <li class="navbar">Home</li>
+                <li class="navbar">Algo</li>
+                <li class="navbar">Description</li>
+                <li class="navbar">Readme</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sliderpage">
+
+        <!--1st page-->
+        <div class="txt active"> 
+            <H1 class="titre">Welcome</H1>
+            <section>
+                <article id="article1stp">
+                    This is a javascript slider page
+                </article>
+            </section>
+        </div>
+
+        <!--2nd page-->
+        <div class="txt">
+            <H1 class="titre">The algorithms</H1>
+
+            <code id="algocode">
+                <p>document.addEventListener('DOMContentLoaded', function (){</p><br>
+
+                    <p class="tab1">let contentslide = document.getElementsByClassName('txt');</p>
+                    <p class="tab1">var el = document.querySelectorAll(".navbar");</p>
+                    <p class="tab1">let sliderp_t=document.getElementsByClassName('target-slider');</p>
+                    <p class="tab1">let explain_t=document.getElementById('container_exp');</p><br/>
+                
+                    <p class="tab1"> for (let index = 1; index < contentslide.length; index++) {</p>
+                        <p class="tab2">contentslide[index].style.transform = 'translateX(80%)';</p>
+                    <p class="tab1">}</p><br>
+                
+                    <p class="tab1">for (let i = 0; i < (el.length); i++) {</p>
+                        <p class="tab2">el[i].addEventListener("click", function(){</p>
+                            <p class="tab3">for (let x = 0; x < el.length; x++) {</p>
+                                <p class="tab4">if (i<x){</p>
+                                    <p class="tab5">contentslide[x].style.transform = 'translateX(80%)';</p>
+                                <p class="tab4">}</p>
+                                <p class="tab4">else if (i>x){</p>
+                                    <p class="tab5">contentslide[x].style.transform = 'translateX(-80%)';</p>
+                                <p class="tab4">}</p>
+                                <p class="tab4">contentslide[i].style.transform = 'translateX(0%)';</p>
+                            <p class="tab3">}</p><br>
+                            
+                            <p class="tab3">for (let j = 0; j < el.length; j++) {</p>
+                                <p class="tab4">contentslide[j].classList.remove("active")</p>
+                            <p class="tab3">}</p><br/>
+                            <p class="tab3">contentslide[i].classList.add("active");</p>
+                        <p class="tab2">});</p>
+                    <p class="tab1">}</p>
+                <p>});</p>
+            </code>
+
+        </div>
+
+        <!--3rd page-->
+        <div class="txt">
+            <section id="description">
+                 <H1 class="titre">Description</H1>
+                 <p id="description-p">Put your mouse on the lines below to see wich elements are concerned</p>
+                 <div id="algo-desc">
+                    <p><span class="target-slider">let contentslide = document.getElementsByClassName('txt')</span>;</p>
+                    <p><span class="target-slider">var el = document.querySelectorAll(".navbar")</span>;</p>
+                    <p><span class="target-slider">let sliderp_t=document.getElementsByClassName('target-slider')</span>;</p>
+                    <p><span class="target-slider">explain_t=document.getElementById('container_exp');</span></p> 
+                 </div>   
+            </section>
+           <div class="contain_">
+                <p id="container_exp">
+
+                </p>
+           </div>
+        </div>
+
+        <!--4th page-->
+        <div class="txt">
+            <H1 class="titre">Readme</H1>
+            <section id="readme">
+                <p>When you use a for loop to create your addEventListener, they are declared created like this <br><br>
+
+                    <ul id="the-tab">
+                        <li>el[0] = the home page</li>
+                        <li>el[1] = the Algo page</li>
+                        <li>el[2] = the Description page</li>
+                        <li>el[3] = the Readme page</li> 
+                    </ul><br>
+                    
+                    We have 4 components in the nav so it will go from 0 to 3<br><br>
+                    
+                    When you click on it it returns the value assigned to it.<br><br>
+                    
+                    the second for loop is used to send the pages below it on the left and those above it on the right and place the one you clicked in the middle<br><br>
+                    
+                    For example here when you click on "Algo" it returns 1 so the "Home" page goes to the left, the "Description" and "Readme" pages will go to the right and "Algo" in the middle of the screen<br><br>
+                    
+                    the last loop serves to remove an "active" class attribute on all elements of the nav bar which sets their opacity to 0<br><br>
+                    
+                    and then we added the "active" class on the clicked element which puts its opacity at 1</p>  
+            </section>
+        </div>
+    </div>
+
+
+    <script src="js.js"></script>   
+</body>
+</html>

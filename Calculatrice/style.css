@@ -1,0 +1,63 @@
+#ccentier{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#affichagenbr,
+#affichageres{
+    width: 400px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: right;
+}
+
+#affichagenbr{
+    margin-top: 20px;
+    border-bottom: 1px solid aqua;
+}
+
+#btns{
+
+    width: 400px;
+    background-color: rgb(145, 98, 98);
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#chiffres{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    border: 1px solid black;
+}
+#chiffres div{
+    border: 1px solid black;
+    color: red;
+    flex: 1 1 60px;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+}
+
+/* #operateur{
+    border: solid 1px black;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#operateur div{
+    border: 1px solid rgb(31, 57, 160);
+    margin: 10px 10px;
+    flex: 1 1 60px;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+} */

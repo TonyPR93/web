@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-family: cursive;
+    background-color: cadetblue;
+}
+
+#chrono{
+    /* border: 1px solid black; */
+    margin: 20px 0px;
+}
+
+#heure, #minutes, #secondes, #miliemsec{
+    display: inline-block;
+    font-size: 28px;
+}
+
+button{
+    margin: 0px 10px;
+    padding: 3px 10px;
+    border-radius: 100%;
+}
+
+#displayresult{
+    display: flex;
+    justify-content: space-around;
+}
+#resultat, #chronotour, #bestlap{
+    margin-top: 20px;
+    padding: 20px;
+    /* border: 1px solid blue; */
+}

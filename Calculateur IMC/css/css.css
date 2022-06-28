@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    /* background-color: darkcyan; */
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#titre{
+    padding: 30px 0px;
+}
+#taille, #poids, #grpbtn, #afres, #afexp, #interpretation{
+    padding: 20px 0px;;
+}
+
+input, button{
+    border-radius: 25px;
+}
+
+button{
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+#interpretation{
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+.divimcs{
+    /* border-top: 1px solid black;
+    border-bottom:1px solid black; */
+    /* display: inline-block; */
+    margin: 0 auto;
+    width: 80%;
+    padding: 25px 0px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.divimcs:first-child{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.divimcs:last-child{
+    border-radius: 0px 20px 20px 0px;
+}
+
+.divimcs:nth-child(-n+18){
+    background-color: blanchedalmond;
+}
+
+.divimcs:nth-child(n+19){
+    background-color:rgb(245, 207, 138);
+}
+
+.divimcs:nth-child(n+25){
+    background-color:rgb(168, 128, 54);
+}
+
+.divimcs:nth-child(n+30){
+    background-color:rgb(150, 103, 15);
+}
+
+.divimcs:nth-child(n+35){
+    background-color:rgb(150, 64, 15);
+}
+
+.divimcs:nth-child(n+40){
+    background-color:rgb(150, 15, 15);
+}
+
+/* .divimcs:nth-child(23){
+    background-color: rgb(114, 95, 65);
+    padding : 22.5px 0px;
+} */
+
+#graphiqueentier{
+
+    background-image: url("../images/imc.jpg");
+    height: 607px;
+    width: 500px;
+    margin: 20px auto;
+
+    /* border: crimson 1px solid; */
+}
+
+#graphique{
+    height: 516px;
+    width: 384px;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 38px;
+    left: 80px;
+}
+
+#pr{
+    background-color: crimson;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -3.5px;
+    left: -3px;
+}
